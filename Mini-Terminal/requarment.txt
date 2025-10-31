@@ -49,3 +49,44 @@ File Handling	                            To log command history
 ANSI Escape Codes (optional)	            For color output (Linux only, limited in Windows)
 
 *****************************************************************************************************
+              ---------********** Language & topic & requarment **********---------
+
+1. C Programming Basics:-
+    Data types, variables, operators
+    Control structures: if, else, switch, for, while, do-while
+    Functions: declaration, definition, calling
+    Arrays, Strings
+    Pointers (especially for strings & dynamic memory)
+    structs for storing file/command info
+                                   ---------------------------------------
+2. File Handling:-
+    Reading/writing files using fopen, fread, fwrite, fprintf, fscanf
+    File modes: "r", "w", "a", "rb", "wb"
+    Checking if file exists
+    Deleting and renaming files (remove(), rename())
+                                   -----------------------------------------
+3. Directory Handling:-
+    Linux: opendir, readdir, closedir (from <dirent.h>)
+    Windows: FindFirstFile, FindNextFile, FindClose (from <windows.h>)
+    Creating/deleting directories: mkdir, rmdir
+                                   -----------------------------------------
+4. String & Command Parsing:-
+    Split user input (like ls -l) into command and arguments
+    Compare strings (strcmp, strncmp)
+    Tokenization (strtok)
+                                   -----------------------------------------
+5. String & Command Parsing
+    Split user input (like ls -l) into command and arguments
+    Compare strings (strcmp, strncmp)
+    Tokenization (strtok)
+                                   -----------------------------------------
+6. Cross-Platform Compatibility
+    File path differences: \ vs /
+    Compiler differences (GCC on Linux, MinGW on Windows)
+                                   -----------------------------------------
+7. Makefile / Build Automation
+    Learn basic Makefile syntax: rules, targets, dependencies
+    Commands: make, make clean
+    Helps in compiling multiple .c files easily                                   
+                                   -----------------------------------------                                                         
+            
