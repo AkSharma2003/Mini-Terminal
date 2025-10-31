@@ -1,0 +1,51 @@
+Requirement:- 
+
+Compiler        :-  GCC (Linux) / MinGW (Windows)
+IDE/Editor      :-  VS Code (recommended)
+Git (optional)  :-  For pushing project to GitHub
+Terminal / CMD  :-  Terminal for Linux, CMD / PowerShell for Windows
+
+****************************************************************************************************
+
+Header Files Setup (For Portable Coding):-
+
+<stdio.h>   :-  Common basic operations
+<stdlib.h>  :-  Common basic operations
+<string.h>  :-  Common basic operations	
+<time.h>	:-  For date/time
+<dirent.h>  :-	Directory listing (ls command) For Linux/Windows
+<direct.h>  :-  Directory operations (_mkdir, _chdir) For only Windows
+<unistd.h>  :-  System calls (getcwd, fork) only Linux
+<windows.h>	:-  (Windows-specific commands like cls) for Windows only
+
+****************************************************************************************************
+#ifdef _WIN32 and #else blocks to switch between Linux/Windows code parts.
+****************************************************************************************************
+
+Functional Requirements:-
+
+Command    	Linux Equivalent	Windows Equivalent
+pwd	            getcwd()	        _getcwd()
+cd <dir>	    chdir()	            _chdir()
+ls	        ls or opendir()	          dir
+mkdir <dir>	    mkdir()	            _mkdir()
+rmdir <dir>	    rmdir()	            _rmdir()
+clear	    system("clear")	       system("cls")
+date	    time() and ctime()	      same
+exit	        exit(0)	              same
+help	    show custom help menu	  same
+
+****************************************************************************************************
+
+Core Concepts:-
+
+Concept	                                    Why Needed
+
+Conditional Compilation (#ifdef)	        To separate Linux/Windows logic
+String Parsing	                            For user command input
+System Calls	                            To execute low-level OS tasks
+Process Management (optional)	            For advanced shell behavior
+File Handling	                            To log command history
+ANSI Escape Codes (optional)	            For color output (Linux only, limited in Windows)
+
+*****************************************************************************************************
