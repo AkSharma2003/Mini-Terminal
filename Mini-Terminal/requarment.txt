@@ -89,4 +89,4 @@ ANSI Escape Codes (optional)	            For color output (Linux only, limited i
     Commands: make, make clean
     Helps in compiling multiple .c files easily                                   
                                    -----------------------------------------                                                         
-            
+                                                                            

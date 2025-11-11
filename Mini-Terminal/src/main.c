@@ -33,7 +33,7 @@ void print_banner() {
     // Banner lines
     char *lines[] = {
         "+-----------------------------------------------+",
-        "|           Welcome to Ankit's Terminal         |",
+        "|           Welcome to DARK's Terminal         |",
         "|                 %s                 |",  // Placeholder for time
         "+-----------------------------------------------+"
     };
@@ -84,9 +84,9 @@ void sigchld_handler(int sig) {
         strftime(time_str, sizeof(time_str), "%H:%M:%S", &tm_info);
 
         if(getcwd(cwd, sizeof(cwd)) != NULL) {
-            printf("\033[36m%s\033[33m@%s KAR_T> \033[0m", cwd, time_str);
+            printf("\033[36m%s\033[33m@%s DARK_T> \033[0m", cwd, time_str);
         } else {
-            printf("\033[33mKAR_T> \033[0m");
+            printf("\033[33mDARK_T> \033[0m");
         }
         fflush(stdout);
     }
@@ -110,9 +110,9 @@ int main() {
         strftime(time_str, sizeof(time_str), "%H:%M:%S", &tm_info);
 
         if(getcwd(cwd, sizeof(cwd)) != NULL) {
-            printf("\033[36m%s\033[33m@%s KAR_T> \033[0m", cwd, time_str);
+            printf("\033[36m%s\033[33m@%s DARK_T> \033[0m", cwd, time_str);
         } else {
-            printf("\033[33mKAR_T> \033[0m");
+            printf("\033[33mDARK_T> \033[0m");
         }
         fflush(stdout);
 
