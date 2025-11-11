@@ -33,7 +33,7 @@ void print_banner() {
     // Banner lines
     char *lines[] = {
         "+-----------------------------------------------+",
-        "|           Welcome to DARK's Terminal         |",
+        "|           Welcome to Ankits Terminal         |",
         "|                 %s                 |",  // Placeholder for time
         "+-----------------------------------------------+"
     };
